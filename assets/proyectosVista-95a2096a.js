@@ -40,7 +40,7 @@ const proyectosVista = {
         tabla += `
       <tr>
         <td>
-          <img src="../assets/javascript.png" width="100" alt="" data-id="${proyecto.id}" class="detalle"/>
+          <img src="javascript.png" width="100" alt="" data-id="${proyecto.id}" class="detalle"/>
         </td>
         <td>${proyecto.user_id}</td>
         <td>${proyecto.nombre}</td>
