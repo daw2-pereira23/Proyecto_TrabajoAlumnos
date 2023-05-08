@@ -63,14 +63,16 @@ const proyectosVista = {
           
           </button>
           <img  data-id="${proyecto.id}" src="assets/editar.svg" class="editar w-100"   alt="editar" />
-          <button
+          <a href="https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/proyectos">
+            <button
               data-id="${proyecto.id}"
               type="button"
               class="btn text-danger borrar"
-          ><a href="https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/proyectos">
-          </a>
-          </button>
+              </button>
             <img  data-id="${proyecto.id}" src="assets/basura.svg" class="borrar w-100"   alt="Basura" />
+          >
+          </a>
+          
         </td>
       </tr>
       `;
