@@ -63,15 +63,13 @@ const proyectosVista = {
           
           </button>
           <img  data-id="${proyecto.id}" src="assets/editar.svg" class="editar w-100"   alt="editar" />
-          <a href="https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/proyectos">
-            <button
+         <button
               data-id="${proyecto.id}"
               type="button"
               class="btn text-danger borrar"
-              </button>
-            <img  data-id="${proyecto.id}" src="assets/basura.svg" class="borrar w-100"   alt="Basura" />
           >
-          </a>
+          </button>
+            <img  data-id="${proyecto.id}" src="assets/basura.svg" class="borrar w-100"   alt="Basura" />
           
         </td>
       </tr>
@@ -99,7 +97,7 @@ const proyectosVista = {
               if (seguro) {
                 await Proyecto.delete(id);
               }
-              window.location.href = "/#/proyectos";
+              window.location.href = 'https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/proyectos";
             } else {
               Swal.fire("El proyecto que intentas borrar no es tuyo");
             }
