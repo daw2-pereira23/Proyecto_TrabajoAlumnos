@@ -54,7 +54,7 @@ const proyectosVista = {
           >
           
           </button>
-          <img  data-id="${proyecto.id}" class="detalle w-100" src="assets/info.svg" alt="Info" />
+          <img  data-id="${proyecto.id}" class="detalle w-100" src="../assets/info.svg" alt="Info" />
           <button
             data-id="${proyecto.id}"
             type="button"
@@ -62,14 +62,14 @@ const proyectosVista = {
           >
           
           </button>
-          <img  data-id="${proyecto.id}" src="assets/editar.svg" class="editar w-100"   alt="editar" />
+          <img  data-id="${proyecto.id}" src="../assets/editar.svg" class="editar w-100"   alt="editar" />
           <button
               data-id="${proyecto.id}"
               type="button"
               class="btn text-danger borrar"
           >
           </button>
-            <img  data-id="${proyecto.id}" src="assets/basura.svg" class="borrar w-100"   alt="Basura" />
+            <img  data-id="${proyecto.id}" src="../assets/basura.svg" class="borrar w-100"   alt="Basura" />
         </td>
       </tr>
       `;
