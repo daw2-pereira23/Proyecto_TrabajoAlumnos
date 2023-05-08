@@ -54,7 +54,7 @@ const proyectosVista = {
           >
           
           </button>
-          <img  data-id="${proyecto.id}" class="detalle w-100" src="../assets/info.svg" alt="Info" />
+          <img  data-id="${proyecto.id}" class="detalle w-100" src="info.svg" alt="Info" />
           <button
             data-id="${proyecto.id}"
             type="button"
