@@ -61,7 +61,7 @@ const loginVistas = {
           divUsuarioLogeado.innerHTML = usuarioLogeado.email;
           menuUsuario.script(userthisMoment, perfil.rol);
           menuSuperior.script(perfil.rol);
-          window.location.href = "/#/home";
+          window.location.href = "https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/home";
         } catch (error) {
           Swal.fire("No se a podido Iniciar sesion con el usuario");
         }
