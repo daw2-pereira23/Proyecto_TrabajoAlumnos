@@ -91,7 +91,8 @@ const proyectosVista = {
             if (seguro) {
               await Proyecto.delete(id);
             }
-            window.location.href = "/#/proyectos";
+            window.location.href = "https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/home";
+            
           } catch (error) {
             alert("No se han podido borrar el proyecto" + error);
           }
