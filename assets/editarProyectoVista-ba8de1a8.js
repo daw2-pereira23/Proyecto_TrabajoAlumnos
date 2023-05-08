@@ -18,7 +18,7 @@ const editarProyecto = {
           </div>
         </form>
         <div class="p-3">
-            <button class="btn btn-success" id="guardarCambiosEditar">Guardar Cambios</button>
+            <button class="btn btn-success" id="guardarCambiosEditar"><a href="https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/proyectos">Guardar Cambios</a></button>
             <button class="btn btn-danger" id="cancelarCambios">Cancelar</button>
         </div>
     </div>
@@ -35,7 +35,7 @@ const editarProyecto = {
       proyecto.descripcion = document.querySelector("#descripcion").value;
       proyecto.enlace = document.querySelector("#enlaceEditar").value;
       proyecto.update(proyecto);
-      window.location.href = "/#/proyectos";
+      //window.location.href = "/#/proyectos";
     });
     document.querySelector("#cancelarCambios").addEventListener("click", () => {
       console.log("Has pulsado sobre cancelar cambios");
