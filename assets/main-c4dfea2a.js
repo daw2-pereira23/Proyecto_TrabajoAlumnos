@@ -6712,7 +6712,7 @@ const menuUsuario = {
           <span id="emailUsuarioLogueado" class="pe-3 text-dark"></span>
             <img
               id="imgAvatar"
-              src="../assets/avatar.svg"
+              src="assets/avatar.svg"
               alt="Logo"
               width="30"
               height="30"
@@ -6769,23 +6769,16 @@ const menuUsuario = {
       `,
       alumno: `
       <li class="text-center" id="rolUsuarioLogueado">
-        anónimo
+        alumno
       </li>
       <li>
-        <a
-          id="editarPerfil"
-          data-bs-toggle="modal"
-          data-bs-target="#editar"
-          class="dropdown-item"
-          href="#/editarPerfil"
-          >Editar perfil</a
-        >
+        <a id="editarPerfil" data-bs-toggle="modal" data-bs-target="#editar" class="dropdown-item" href="#/editarPerfil">Editar perfil</a>
       </li>
       <li>
-        <a class="liMisProyectos dropdown-item d-none" href="#/misProyectos">Mis Proyectos</a>
+        <a class="liMisProyectos dropdown-item" href="#/misProyectos">Mis Proyectos</a>
       </li>
       <div class="dropdown-divider"></div>
-      <li><a class="liLogout d-none dropdown-item" href="">Logout</a></li>
+      <li><a class="liLogout dropdown-item" href="">Logout</a></li>
       `,
       profesor: `
       <li class="text-center" id="rolUsuarioLogueado">
@@ -11987,13 +11980,13 @@ const enrutador = {
     home: __vitePreload(() => import("./homeVista-c666eb26.js"), true ? [] : void 0, import.meta.url),
     // Usuarios
     adminUsuarios: __vitePreload(() => import("./adminVista-bbf3953d.js"), true ? [] : void 0, import.meta.url),
-    registro: __vitePreload(() => import("./registroVista-7c701211.js"), true ? [] : void 0, import.meta.url),
-    login: __vitePreload(() => import("./loginVistas-bf9516da.js"), true ? [] : void 0, import.meta.url),
+    registro: __vitePreload(() => import("./registroVista-701dceff.js"), true ? [] : void 0, import.meta.url),
+    login: __vitePreload(() => import("./loginVistas-abadebaf.js"), true ? [] : void 0, import.meta.url),
     // Proyectos
-    proyectos: __vitePreload(() => import("./proyectosVista-4474b110.js"), true ? ["./proyectosVista-4474b110.js","./proyecto-c8676e5d.js","./detalleProyectoVista-c7597067.js","./editarProyectoVista-fbded742.js"] : void 0, import.meta.url),
-    nuevoProyecto: __vitePreload(() => import("./nuevoProyectoVista-599d2069.js"), true ? ["./nuevoProyectoVista-599d2069.js","./proyecto-c8676e5d.js"] : void 0, import.meta.url),
-    editarProyecto: __vitePreload(() => import("./editarProyectoVista-fbded742.js"), true ? ["./editarProyectoVista-fbded742.js","./proyecto-c8676e5d.js"] : void 0, import.meta.url),
-    detalleProyecto: __vitePreload(() => import("./detalleProyectoVista-c7597067.js"), true ? ["./detalleProyectoVista-c7597067.js","./proyecto-c8676e5d.js"] : void 0, import.meta.url),
+    proyectos: __vitePreload(() => import("./proyectosVista-7516b5e9.js"), true ? ["./proyectosVista-7516b5e9.js","./proyecto-44f1216b.js","./detalleProyectoVista-3dbc775c.js","./editarProyectoVista-ba8de1a8.js"] : void 0, import.meta.url),
+    nuevoProyecto: __vitePreload(() => import("./nuevoProyectoVista-6fdbd2d8.js"), true ? ["./nuevoProyectoVista-6fdbd2d8.js","./proyecto-44f1216b.js"] : void 0, import.meta.url),
+    editarProyecto: __vitePreload(() => import("./editarProyectoVista-ba8de1a8.js"), true ? ["./editarProyectoVista-ba8de1a8.js","./proyecto-44f1216b.js"] : void 0, import.meta.url),
+    detalleProyecto: __vitePreload(() => import("./detalleProyectoVista-3dbc775c.js"), true ? ["./detalleProyectoVista-3dbc775c.js","./proyecto-44f1216b.js"] : void 0, import.meta.url),
     misProyectos: __vitePreload(() => import("./misProyectosVista-4ed993c7.js"), true ? [] : void 0, import.meta.url),
     // Enunciados
     enunciados: __vitePreload(() => import("./enunciadosVista-4ed993c7.js"), true ? [] : void 0, import.meta.url),

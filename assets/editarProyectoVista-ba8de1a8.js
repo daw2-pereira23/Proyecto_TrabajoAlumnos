@@ -1,5 +1,5 @@
-import { P as Proyecto } from "./proyecto-c8676e5d.js";
-import "./main-1f110b77.js";
+import { P as Proyecto } from "./proyecto-44f1216b.js";
+import "./main-c4dfea2a.js";
 const editarProyecto = {
   template: `
 
@@ -35,7 +35,7 @@ const editarProyecto = {
       proyecto.descripcion = document.querySelector("#descripcion").value;
       proyecto.enlace = document.querySelector("#enlaceEditar").value;
       proyecto.update(proyecto);
-      window.location.href = 'https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/home'
+      window.location.href = "/#/proyectos";
     });
     document.querySelector("#cancelarCambios").addEventListener("click", () => {
       console.log("Has pulsado sobre cancelar cambios");

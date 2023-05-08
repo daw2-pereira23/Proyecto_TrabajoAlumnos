@@ -1,7 +1,7 @@
-import { P as Proyecto } from "./proyecto-c8676e5d.js";
-import { detalleProyecto } from "./detalleProyectoVista-c7597067.js";
-import { editarProyecto } from "./editarProyectoVista-fbded742.js";
-import "./main-1f110b77.js";
+import { U as User, P as Perfil } from "./main-c4dfea2a.js";
+import { P as Proyecto } from "./proyecto-44f1216b.js";
+import { detalleProyecto } from "./detalleProyectoVista-3dbc775c.js";
+import { editarProyecto } from "./editarProyectoVista-ba8de1a8.js";
 const proyectosVista = {
   template: `
     <main style="padding-top: 100px">
@@ -86,13 +86,20 @@ const proyectosVista = {
         const id = e.target.dataset.id;
         if (e.target.classList.contains("borrar")) {
           try {
+            const userthisMoment = await User.getUser();
             const proyectoABorrar = await Proyecto.getById(id);
-            const seguro = confirm("¿Está seguro que desea borrar el proyecto? Se eliminarán todos sus comentarios y notas " + proyectoABorrar.nombre + ", " + proyectoABorrar.nombre);
-            if (seguro) {
-              await Proyecto.delete(id);
+            const perfil = await Perfil.getByUserId(userthisMoment.id);
+            console.log(perfil.user_id);
+            console.log(proyectoABorrar.user_id);
+            if (perfil.user_id == proyectoABorrar.user_id) {
+              const seguro = confirm("¿Está seguro que desea borrar el proyecto? Se eliminarán todos sus comentarios y notas " + proyectoABorrar.nombre + ", " + proyectoABorrar.nombre);
+              if (seguro) {
+                await Proyecto.delete(id);
+              }
+              window.location.href = "/#/proyectos";
+            } else {
+              Swal.fire("El proyecto que intentas borrar no es tuyo");
             }
-            window.location.href = "https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/home";
-            
           } catch (error) {
             alert("No se han podido borrar el proyecto" + error);
           }

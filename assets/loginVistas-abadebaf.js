@@ -1,4 +1,4 @@
-import { U as User, P as Perfil, m as menuUsuario, a as menuSuperior } from "./main-1f110b77.js";
+import { U as User, P as Perfil, m as menuUsuario, a as menuSuperior } from "./main-c4dfea2a.js";
 const loginVistas = {
   template: `
     <div
@@ -61,7 +61,8 @@ const loginVistas = {
           divUsuarioLogeado.innerHTML = usuarioLogeado.email;
           menuUsuario.script(userthisMoment, perfil.rol);
           menuSuperior.script(perfil.rol);
-          window.location.href = "https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/home";
+          console.log(perfil.rol);
+          window.location.href = "/#/home";
         } catch (error) {
           Swal.fire("No se a podido Iniciar sesion con el usuario");
         }
