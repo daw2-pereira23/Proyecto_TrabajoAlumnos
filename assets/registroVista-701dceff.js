@@ -43,7 +43,9 @@ const registroVista = {
             </div>
   
             <button type="submit" class="mt-5 btn btn-success w-100">
+              <a href="https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/login">
                 Enviar
+               </a>
             </button>
             <hr class="mt-5" />
             <button type="submit" class="mt-1 btn btn-primary w-100">
