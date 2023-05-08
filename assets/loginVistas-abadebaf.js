@@ -63,7 +63,7 @@ const loginVistas = {
           menuUsuario.script(userthisMoment, perfil.rol);
           menuSuperior.script(perfil.rol);
           console.log(perfil.rol);
-          window.location.href = "/#/home";
+          //window.location.href = "/#/home";
         } catch (error) {
           Swal.fire("No se a podido Iniciar sesion con el usuario");
         }
