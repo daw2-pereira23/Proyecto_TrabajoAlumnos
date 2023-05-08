@@ -35,7 +35,7 @@ const editarProyecto = {
       proyecto.descripcion = document.querySelector("#descripcion").value;
       proyecto.enlace = document.querySelector("#enlaceEditar").value;
       proyecto.update(proyecto);
-      window.location.href = 'Proyecto_TrabajoAlumnos/#/proyectos'
+      window.location.href = 'https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/home'
     });
     document.querySelector("#cancelarCambios").addEventListener("click", () => {
       console.log("Has pulsado sobre cancelar cambios");
