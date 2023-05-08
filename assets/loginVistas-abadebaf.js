@@ -20,8 +20,9 @@ const loginVistas = {
                 id="btn_submit"
                 type="submit"
                 class="mt-4 btn btn-success w-100"
-            >
+            ><a href="https://daw2-pereira23.github.io/Proyecto_TrabajoAlumnos/#/login">
                 Enviar
+                <a/>
             </button>
             <p class="mt-3">
                 <a href="">No recuerdo mi contraseña</a>
