@@ -1,7 +1,7 @@
-import { P as Proyecto } from "./proyecto-2cf173e8.js";
-import { detalleProyecto } from "./detalleProyectoVista-d81c734a.js";
-import { editarProyecto } from "./editarProyectoVista-84d86aa1.js";
-import "./main-8eada198.js";
+import { P as Proyecto } from "./proyecto-c8676e5d.js";
+import { detalleProyecto } from "./detalleProyectoVista-c7597067.js";
+import { editarProyecto } from "./editarProyectoVista-fbded742.js";
+import "./main-1f110b77.js";
 const proyectosVista = {
   template: `
     <main style="padding-top: 100px">
